@@ -36,6 +36,14 @@ body {
     height: 70vh;
     text-align: center;
     overflow-y: auto;
+    position: relative;
+}
+
+.copy{
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+  
 }
 
 /* 타이틀 */
@@ -104,7 +112,8 @@ h1{
 #todo-list {
     list-style: none;
     padding: 0;
-    height: 70%;
+    height: 50%;
+    overflow: scroll;
     width: 100%;
 }
 
