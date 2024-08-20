@@ -24,8 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
         checkIcon.classList.add('material-symbols-outlined');
         checkIcon.textContent = 'check_circle';
         checkIcon.style.cursor = 'pointer';
-
-     
+    
+        checkIcon.addEventListener('click', () => {
+            todoText.classList.toggle('completed');
+            checkIcon.classList.toggle('checked');
+        });
+    
         // 텍스트를 위한 <span> 요소를 생성합니다.
         const todoText = document.createElement('span');
         todoText.textContent = todo.title;
